@@ -1,0 +1,45 @@
+export const delimeter = {
+    S3_FileKey: '_',
+    Directory: '/',
+}
+export const FileFormat: { [key: string]: string } = {
+    JPEG : 'image/jpeg',
+    JPG : 'image/jpg',
+    PNG : 'image/png',
+    GIF : 'image/gif',
+    WEBP : 'image/webp',
+    BMP : 'image/bmp',
+    TIFF: 'image/tiff',
+    ICO : 'image/ico',
+    SVG : 'image/svg+xml',
+    HTML: 'text/html',
+    MP4 : 'video/mp4',
+    MOV : 'video/quicktime',
+    AVI : 'video/x-msvideo',
+    WMV : 'video/x-ms-wmv',
+    FLV : 'video/x-flv',
+    MPEG : 'video/mpeg',
+    MP3 : 'audio/mpeg',
+    WAV : 'audio/wav',
+    AAC : 'audio/aac',
+    FLAC : 'audio/flac',
+    OGG : 'audio/ogg',
+    PDF : 'application/pdf',
+    DOC : 'application/msword',
+    DOCX : 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',  
+    XLS : 'application/vnd.ms-excel',
+    XLSX : 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',  
+    PPT : 'application/vnd.ms-powerpoint',
+    PPTX : 'application/vnd.openxmlformats-officedocument.presentationml.presentation',
+    TXT : 'text/plain',  
+    CSV : 'text/csv',
+    ZIP : 'application/zip',
+    RAR : 'application/x-rar-compressed',
+    TAR : 'application/x-tar',
+    GZ : 'application/gzip',
+    SEVENZ : 'application/x-7z-compressed',
+}
+Object.freeze(FileFormat);
+export const allowedFileTypes = [FileFormat.JPEG, FileFormat.PNG, FileFormat.GIF, FileFormat.MP4, FileFormat.JPG, FileFormat.WEBP];
+export const allowedImageFileTypes = [FileFormat.JPEG, FileFormat.PNG];
+export const validCarLabels =  ['Car', 'Vehicle', 'Automobile', 'Transportation'];

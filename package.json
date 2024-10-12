@@ -1,5 +1,5 @@
 {
-  "name": "grnwlzbackend",
+  "name": "node_backend_template",
   "version": "1.0.0",
   "description": "Backend Services for Gr33nwh33lz services",
   "main": "index.ts",

@@ -174,7 +174,7 @@ export default class AWSBaseService {
         if (!emailFile) throw new Error("email template does not exist!!!");
         const emailContent = await this.parseEmailTemplate(emailFile as Readable);
 
-        const variables = { APP_NAME: 'Gr33nwh33lz', recipient: data?.recipient as string, userName: data?.firstName as string, verificationLink: data?.verificationUrl as string, CompanyName: "GR33NWH33LZ" };
+        const variables = { APP_NAME: 'NodeBackend', recipient: data?.recipient as string, userName: data?.firstName as string, verificationLink: data?.verificationUrl as string, CompanyName: "NodeBackend" };
         const emailTemplate = this.replaceVariables(emailContent, variables);
         console.log({ emailTemplate });
         return emailTemplate;

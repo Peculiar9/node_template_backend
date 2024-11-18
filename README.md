@@ -118,12 +118,13 @@ Contributions are welcome! Please follow these steps:
 4. Push to the branch (`git push origin feature/YourFeature`).
 5. Open a Pull Request.
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
 
 ## Additional Notes
 ### Dependency Injection
 This project leverages **Inversify** for dependency injection to maintain a decoupled architecture. This ensures that components like controllers, services, and repositories can be independently tested and swapped out if needed without altering the overall system.
+<br>
+See - [Dependency Injection Overview](docs/DEPENDENCY.md) for more.
 
 ### API Integrations
 The **Infrastructure** layer includes integration with various external APIs. For example, HTTP clients are defined to interact with third-party services, such as AWS for file management. The use of services like `AWSHelper` abstracts away the complexity of AWS integrations, making it easier to work with from other parts of the application.

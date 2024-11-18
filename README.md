@@ -125,15 +125,22 @@ Contributions are welcome! Please follow these steps:
 This project leverages **Inversify** for dependency injection to maintain a decoupled architecture. This ensures that components like controllers, services, and repositories can be independently tested and swapped out if needed without altering the overall system.
 <br>
 See - [Dependency Injection Overview](docs/DEPENDENCY.md) for more.
-<br>
 
-See - [API management for more](docs/API.md) for more.
+
+### API Management
+The project utilizes **Inversify** and **Express** for advanced API management. Controllers are registered and managed with dependency injection, which ensures a clear separation of routing logic, business services, and data handling.
+<br>
+See - [API Management Overview](docs/API.md) for more.
 
 ### API Integrations
 The **Infrastructure** layer includes integration with various external APIs. For example, HTTP clients are defined to interact with third-party services, such as AWS for file management. The use of services like `AWSHelper` abstracts away the complexity of AWS integrations, making it easier to work with from other parts of the application.
+<br>
+See - [API Integrations Overview](docs/DATABASE.md) for more.
 
 ### Database Management
 The project supports both **MongoDB** and **PostgreSQL** as data stores. The **MongoConnectionManager** and **SQLConnectionManager** are responsible for managing connections, ensuring efficient pooling, and providing easy access to database operations. The repositories abstract all data operations, ensuring that switching between databases requires minimal changes to the core logic.
+<br>
+See - [Database Management Overview](docs/DATABASE.md) for more.
 
 ### Error Handling and Logging
 Middleware and services include structured error handling and logging, which helps maintain traceability throughout the application's lifecycle. Using tools like **Sentry** for monitoring provides detailed insights into issues, ensuring faster resolution.

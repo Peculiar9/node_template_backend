@@ -22,7 +22,7 @@ The project uses dependency injection via Inversify to promote modularity and ea
 The project follows a clean architecture approach, with each layer clearly defined for modularity and scalability:
 
 ```
-backend02/
+Node Express Backend (Typescript)/
 ├── dist/                   # Compiled output
 │   ├── Middleware/         # Middlewares for handling requests (e.g., Auth, Rate Limiter)
 │   ├── Core/               # Core application logic (Types, DTOs, Services, Repositories)
@@ -125,6 +125,9 @@ Contributions are welcome! Please follow these steps:
 This project leverages **Inversify** for dependency injection to maintain a decoupled architecture. This ensures that components like controllers, services, and repositories can be independently tested and swapped out if needed without altering the overall system.
 <br>
 See - [Dependency Injection Overview](docs/DEPENDENCY.md) for more.
+<br>
+
+See - [API management for more](docs/API.md) for more.
 
 ### API Integrations
 The **Infrastructure** layer includes integration with various external APIs. For example, HTTP clients are defined to interact with third-party services, such as AWS for file management. The use of services like `AWSHelper` abstracts away the complexity of AWS integrations, making it easier to work with from other parts of the application.

@@ -11,6 +11,7 @@ import AWSBaseService from "../Services/AWSBaseService";
 import OTPService from "./Services/OTPService";
 import BaseHTTPClient from "../Infrastructure/APIs/BaseHTTPClient";
 import FileService from "./Services/FileService";
+import FileManagerRepository from "./Application/Repository/FileManagerRepository";
 // import { Repository } from "../Infrastructure/Repository/MongoDB/Repository";
 
 export default class DIContainer {
@@ -25,7 +26,7 @@ export default class DIContainer {
         // this.diContainerBuilder.bind<IA>('IAccountUseCase').to(AccountUseCase);
         // this.diContainerBuilder.bind<Repository<any>>(REPO_TYPES.Repository).toSelf();
         
-        
+        this.diContainerBuilder.bind(FileManagerRepository).toSelf();
         this.diContainerBuilder.bind(UserRepository).toSelf();
         this.diContainerBuilder.bind(VerificationRepository).toSelf();
         this.diContainerBuilder.bind(AWSHelper).toSelf();   
